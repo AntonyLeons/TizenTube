@@ -62,7 +62,7 @@ const defaultConfig = {
   enableClock: false,
   isClock12HourFormat: false,
   clockShowSeconds: false,
-  spoofViewport: 'disabled',
+  spoofViewport: '2160p',
 };
 
 let localConfig;
