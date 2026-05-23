@@ -423,6 +423,22 @@ export default function modernUI(update, parameters) {
                         }
                     })
                 },
+                {
+                    name: 'Spoof Viewport Resolution',
+                    icon: 'VIDEO_QUALITY',
+                    value: null,
+                    menuId: 'tt-spoof-viewport',
+                    menuHeader: {
+                        title: 'Spoof Viewport Resolution',
+                        subtitle: 'Report a different screen resolution to YouTube. App restart required. Useful if TV reports 1080p to browser but can decode 4K.'
+                    },
+                    options: [
+                        { name: 'Disabled', key: 'spoofViewport', value: 'disabled' },
+                        { name: '2160p (4K)', key: 'spoofViewport', value: '2160p' },
+                        { name: '1440p (2K)', key: 'spoofViewport', value: '1440p' },
+                        { name: '1080p', key: 'spoofViewport', value: '1080p' },
+                    ]
+                },
                 window.h5vcc && window.h5vcc.tizentube && window.h5vcc.tizentube.SetFrameRate ? {
                     name: t('settings.options.videoPlayer.options.afr'),
                     icon: 'SLOW_MOTION_VIDEO',
